@@ -14,7 +14,7 @@ def display_details():
     print()
 
 def get_wordle_guess(word_list):
-    guess = input(f"Please enter your guess - attempt {attempt} ")
+    guess = input(f"Please enter your guess - attempt {attempt}:")
 
     # Validating the user's guess
     while len(guess) != 5 or guess not in word_list:
@@ -22,7 +22,7 @@ def get_wordle_guess(word_list):
             print("Five letter words only please.")
         else:
             print("Not in word list!")
-        guess = input(f"Please enter your guess - attempt {attempt} ")
+        guess = input(f"Please enter your guess - attempt {attempt}: ")
 
     return guess
 
